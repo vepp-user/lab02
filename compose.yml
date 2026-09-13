@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+    volumes:
+      - vol_postgresql:/var/lib/postgresql
+  api: 
+    image: lab02-api:latest
+    environment:
+      MESSAGE: "Valentino Paredes"
+    ports:
+      - "3000:8080"
+
+volumes:
+  vol_postgresql:
