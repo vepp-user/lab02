@@ -5,12 +5,24 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
     volumes:
       - vol_postgresql:/var/lib/postgresql
-  api: 
+  api1: 
     image: lab02-api:latest
     environment:
       MESSAGE: "Valentino Paredes"
     ports:
       - "3000:8080"
+  api2: 
+    image: lab02-api:latest
+    environment:
+      MESSAGE: "Valentino Paredes"
+    ports:
+      - "3001:8080"
+  api3: 
+    image: lab02-api:latest
+    environment:
+      MESSAGE: "Valentino Paredes"
+    ports:
+      - "3002:8080"
 
 volumes:
   vol_postgresql:
