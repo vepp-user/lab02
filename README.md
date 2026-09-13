@@ -103,7 +103,7 @@ Se utilizó un archivo .gitignore para evitar subir al repositorio archivos gene
 ### APIs Desplegadas
 ![alt text](image-2.png)
 
-### Levantamiento de Servicios con Docker Compose.
+### Levantamiento de Servicios con Docker Compose
 ![alt text](image.png)
 
 ### Volumen Empleado y Red tipo Bridge
